@@ -58,7 +58,11 @@ const duoGames = [
   ["Kite-Flying Duel","Pick your kite move and outmaneuver your friend's kite in the sky.","duo","🪁","quick","blue","indian-kite"],
   ["Antakshari: Last Letter","Take turns naming a song that starts with the last letter. No lyrics needed!","duo","🎤","thinky","pink","indian-antakshari"],
   ["Rangoli Recall","Watch the colorful rangoli pattern and tap it back in order.","solo","🌸","thinky","lavender","indian-rangoli"],
-  ["Chai-Time India Quiz","A friendly mini quiz about places, food, festivals, and nature.","solo","☕","thinky","yellow","indian-quiz"]
+  ["Chai-Time India Quiz","A friendly mini quiz about places, food, festivals, and nature.","solo","☕","thinky","yellow","indian-quiz"],
+  ["Neon Snake","Guide your growing snake, munch the fruit, and don't bump into yourself!","solo","🐍","quick","green","animated-snake"],
+  ["Pixel Pong","A two-player paddle showdown. First to five points wins!","duo","🏓","quick","blue","animated-pong"],
+  ["Mango Catcher","Move your basket to catch falling mangoes before the timer runs out.","solo","🥭","quick","yellow","animated-mango"],
+  ["Bubble Pop Garden","Pop the drifting bubbles and see how many you can catch in 20 seconds.","solo","🫧","quick","lavender","animated-bubbles"]
 ];
 
 const coupleQuestions = {
