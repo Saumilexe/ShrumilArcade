@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8f7f2" />
+    <meta name="description" content="Shrumil Arcade: 110 playful mini-games, including Indian classics, two-player duels, and sweet games for couples." />
+    <title>Shrumil Arcade — a tiny break, please</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Shrumil Arcade home">
+        <span class="brand-mark">✳</span><span>Shrumil <span class="brand-light">Arcade</span></span>
+      </a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#games">the games <span>↘</span></a>
+        <a class="nav-link" href="#how-it-works">the vibe</a>
+      </nav>
+      <button class="top-favorites" id="favoritesToggle" type="button" aria-pressed="false"><span>♡</span> <span id="favoriteNavText">your faves</span></button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="live-dot"></span> YOUR INTERNET HAPPY PLACE</div>
+          <h1>A tiny break.<br />A <span class="hero-highlight">big</span> little <span class="scribble">smile.</span></h1>
+          <p class="hero-description">One hundred and ten bite-sized games for solo breaks, friendly face-offs, Indian classics, and sweet little moments together. No downloads, no pressure — just play.</p>
+          <a class="hero-cta" href="#games">find your fun <span>↓</span></a>
+          <div class="hero-footnote"><span class="sparkle">✦</span> made for the in-between moments</div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-sun"></div>
+          <div class="art-squiggle">〰</div>
+          <div class="art-sticker sticker-star">✳</div>
+          <div class="art-sticker sticker-smile">☺</div>
+          <div class="art-sticker sticker-plus">✦</div>
+          <div class="art-game-card">
+            <div class="art-card-top"><span>NOW PLAYING</span><span class="art-dots">● ● ●</span></div>
+            <div class="art-card-icon">🎯</div>
+            <div class="art-card-title">tiny target</div>
+            <div class="art-card-sub">A little aim goes a long way.</div>
+            <div class="art-card-progress"><i></i></div>
+            <div class="art-card-bottom"><span>ROUND 01 / 03</span><span>↗</span></div>
+          </div>
+          <div class="art-caption"><span>⟵</span> your next favorite is in here</div>
+        </div>
+        <div class="hero-index"><span>01</span> / 110 GAMES</div>
+      </section>
+
+      <section class="ticker" aria-label="A little encouragement">
+        <div class="ticker-track"><span>LESS SCROLLING, MORE SMILING</span><b>✳</b><span>TAKE YOUR BRAIN OUT TO PLAY</span><b>✳</b><span>SMALL GAMES, BIG BREAK ENERGY</span><b>✳</b><span>LESS SCROLLING, MORE SMILING</span><b>✳</b><span>TAKE YOUR BRAIN OUT TO PLAY</span><b>✳</b><span>SMALL GAMES, BIG BREAK ENERGY</span><b>✳</b></div>
+      </section>
+
+      <section class="games-section" id="games">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow section-eyebrow">THE GOOD STUFF</div>
+            <h2>Pick a little <span>something.</span></h2>
+          </div>
+          <div class="game-count"><span id="gameCount">110</span> tiny adventures <span class="count-sparkle">✳</span></div>
+        </div>
+        <div class="game-controls">
+          <label class="search-box"><span class="search-icon">⌕</span><input id="searchInput" type="search" placeholder="What sounds fun?" autocomplete="off" aria-label="Search games" /><kbd>↵</kbd></label>
+          <div class="filter-row" id="filterRow" aria-label="Filter games by category"></div>
+          <button class="sort-button" id="shuffleButton" type="button"><span>⤨</span> surprise me</button>
+        </div>
+        <div class="games-grid" id="gamesGrid"></div>
+        <div class="empty-state hidden" id="emptyState"><div>¯\_(ツ)_/¯</div><h3>No games found.</h3><p>Try another search — the fun's in here somewhere.</p><button class="text-button" id="clearFilters" type="button">Clear filters ↗</button></div>
+        <div class="load-more-row"><span>THAT'S THE WHOLE LITTLE UNIVERSE</span><span>✳</span></div>
+      </section>
+
+      <section class="vibe-section" id="how-it-works">
+        <div class="vibe-sparkle">✳</div>
+        <div class="vibe-copy"><div class="eyebrow">A LITTLE NOTE TO YOU</div><h2>You don't have to<br /><span>be good</span> at it.</h2><p>There are no leaderboards here. No streaks to keep. No “just one more” trap (okay, maybe one). Just tiny games, zero stakes, and a nice little moment for yourself.</p><a href="#games">Go play a little <span>↗</span></a></div>
+        <div class="vibe-sticker"><span>GOOD<br />VIBES<br />ONLY</span><i>☺</i></div>
+      </section>
+      <footer class="footer"><a class="brand footer-brand" href="#"><span class="brand-mark">✳</span><span>Shrumil <span class="brand-light">Arcade</span></span></a><span>made with a little love & a lot of pixels</span><a href="#games">back to the fun ↑</a></footer>
+    </main>
+
+    <div class="modal-backdrop" id="gameModal" aria-hidden="true">
+      <section class="game-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal-close" id="modalClose" type="button" aria-label="Close game">×</button>
+        <div class="modal-topline"><span id="modalCategory">A LITTLE GAME</span><span id="modalRound"></span></div>
+        <div class="modal-title-line"><div class="modal-icon" id="modalIcon"></div><div><h2 id="modalTitle"></h2><p id="modalDescription"></p></div></div>
+        <div class="play-area" id="playArea"></div>
+        <div class="modal-footer"><span>NO PRESSURE. JUST PLAY.</span><button id="modalAgain" type="button" class="again-button">new round ↻</button></div>
+      </section>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="duo-games.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
